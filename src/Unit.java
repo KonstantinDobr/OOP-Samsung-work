@@ -9,8 +9,9 @@ public class Unit {
         this.name = name;
     }
 
-    public void printInfo() {
-        System.out.println("Name : " + name);
-        System.out.println("Health : " + health);
+    @Override
+    public String toString() {
+        return "name='" + name + '\'' +
+                ", health=" + health;
     }
 }

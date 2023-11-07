@@ -5,9 +5,9 @@ public class Mage extends Unit {
         super(name, health);
         this.mana = mana;
     }
+
     @Override
-    public void printInfo() {
-        super.printInfo();
-        System.out.println("Mana : " + mana);
+    public String toString() {
+        return super.toString() + ", mana=" + mana;
     }
 }
