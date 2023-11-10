@@ -9,8 +9,20 @@ public class Unit {
         this.name = name;
     }
 
+<<<<<<< Updated upstream
     public void printInfo() {
         System.out.println("Name : " + name);
         System.out.println("Health : " + health);
+=======
+    public Unit(Unit unit) {
+        this.health = unit.health;
+        this.name = unit.name;
+    }
+
+    @Override
+    public String toString() {
+        return "name='" + name + '\'' +
+                ", health=" + health;
+>>>>>>> Stashed changes
     }
 }
